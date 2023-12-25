@@ -1,4 +1,6 @@
-        print("{}: {}".format(key, value))
+    print("{}: {}".format(key, value))
+
+
 def mergesort(array):
     debug_print(array=array)
     if len(array) <= 1:
