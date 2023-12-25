@@ -1,4 +1,4 @@
-        print("{}: {}".format(key, value))
+                print("{}: {}".format(key, value))
 
 
 def mergesort(array):
