@@ -1,4 +1,6 @@
-    print("{}: {}".format(key, value))
+def debug_print(**kwargs):
+    for key, value in kwargs.items():
+        print("{}: {}".format(key, value))
 
 
 def mergesort(array):
@@ -38,7 +40,12 @@ def merge(left, right):
 if __name__ == "__main__":
     input_str = input("Enter numbers, separated by ',': ")
 
-            quit(1)
+    # Convert input to a list of integers
+    try:
+        value_list = [int(x) for x in input_str.split(',')]
+    except ValueError:
+        print("Invalid input. Please enter numbers separated by ','.")
+        quit(1)
 
     debug_print(value_list=value_list)
 
